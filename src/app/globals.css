@@ -11,6 +11,7 @@
 body {
 	color: rgb(var(--foreground-rgb));
 	font-family: 'Moderustic', sans-serif;
+	color: #283d3b;
 }
 
 /* /_responsible for the blue tick when a link is clicked _/ */
