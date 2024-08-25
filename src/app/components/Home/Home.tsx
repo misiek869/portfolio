@@ -142,32 +142,32 @@ const Home = () => {
 										<img
 											src='/html_logo.png'
 											alt='html logo'
-											className='h-12 w-12'
+											// className='h-12 w-12'
 										/>
 										<img
 											src='/css_logo.png'
 											alt='css logo'
-											className='h-12 w-12'
+											// className='h-12 w-12'
 										/>
 										<img
 											src='/javascript_logo.png'
 											alt='javascript logo'
-											className='h-12 w-12'
+											// className='h-12 w-12'
 										/>
 										<img
 											src='/typescript_loto.png'
 											alt='typescript_loto'
-											className='h-12 w-12'
+											// className='h-12 w-12'
 										/>
 										<img
 											src='/react_logo.png'
 											alt='react logo'
-											className='h-12 w-12'
+											// className='h-12 w-12'
 										/>
 										<img
 											src='/next_logo.png'
 											alt='next logo'
-											className='h-12 w-12'
+											// className='h-12 w-12'
 										/>
 									</Slider>
 								</div>
