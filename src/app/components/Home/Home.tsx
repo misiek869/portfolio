@@ -25,6 +25,9 @@ const Home = () => {
 									<h1 className='text-[#283D3B] text-5xl md:text-5xl lg:text-7xl xl:text-7xl mt-5 md:mt-3'>
 										I'm Michael
 									</h1>
+									<h2 className='capitalize'>
+										aspiring junior front-end developer
+									</h2>
 								</div>
 							</div>
 						</div>
