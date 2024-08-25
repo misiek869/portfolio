@@ -1,24 +1,8 @@
 import type { Metadata } from 'next'
-import localFont from '@next/font/local'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const poppins = localFont({
-	src: [
-		{
-			path: '../../public/fonts/Moderustic-Bold.ttf',
-			weight: '400',
-		},
-		{
-			path: '../../public/fonts/Moderustic-Medium.ttf',
-			weight: '300',
-		},
-		{
-			path: '../../public/fonts/Moderustic-Light.ttf',
-			weight: '200',
-		},
-	],
-	variable: '--font-Moderustic-Regular',
-})
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Portfolio',
@@ -32,7 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={poppins.className}>{children}</body>
+			<body className={inter.className}>{children}</body>
 		</html>
 	)
 }
