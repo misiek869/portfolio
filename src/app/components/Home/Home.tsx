@@ -3,6 +3,90 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const Home = () => {
+	var settings = {
+		infinite: true,
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		speed: 2000,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		loop: true,
+		cssEase: 'linear',
+		responsive: [
+			{
+				breakpoint: 1760,
+				settings: {
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 1460,
+				settings: {
+					slidesToShow: 6,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 1290,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 1100,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false,
+				},
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: false,
+				},
+			},
+
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					initialSlide: 1,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	}
+
 	return (
 		<>
 			<div
@@ -45,6 +129,48 @@ const Home = () => {
 						<div className='col-span-12 pt-[50px] md:bg-transparent  md:pt-[130px] md:col-span-7'>
 							<div className='container m-auto'>
 								<img src='/michal.png' alt='michal' decoding='async' />
+							</div>
+						</div>
+					</div>
+					<div className='container m-auto absolute'>
+						<div className='px-3'>
+							<div
+								className='relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-md z-20'
+								style={{ boxShadow: '#C44536 -10px 25px 50px 10px' }}>
+								<div className='lg:py-10 md:py-6 sm:py-6 cursor cursor-all-scroll'>
+									<Slider {...settings}>
+										<img
+											src='/html_logo.png'
+											alt='html logo'
+											className='h-12 w-12'
+										/>
+										<img
+											src='/css_logo.png'
+											alt='css logo'
+											className='h-12 w-12'
+										/>
+										<img
+											src='/javascript_logo.png'
+											alt='javascript logo'
+											className='h-12 w-12'
+										/>
+										<img
+											src='/typescript_loto.png'
+											alt='typescript_loto'
+											className='h-12 w-12'
+										/>
+										<img
+											src='/react_logo.png'
+											alt='react logo'
+											className='h-12 w-12'
+										/>
+										<img
+											src='/next_logo.png'
+											alt='next logo'
+											className='h-12 w-12'
+										/>
+									</Slider>
+								</div>
 							</div>
 						</div>
 					</div>
