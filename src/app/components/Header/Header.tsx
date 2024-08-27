@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import DiagonalDrawer from './DiagonalDrawer'
 
 const Header = () => {
 	const [selectedIndexOne, setSelectedIndexOne] = useState<number>(0)
@@ -16,6 +17,10 @@ const Header = () => {
 			window.removeEventListener('scroll', handleScroll)
 		}
 	}, [])
+
+	const openDrawer = () => {
+		setIsOpen(true)
+	}
 
 	return (
 		<>
