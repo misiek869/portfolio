@@ -19,7 +19,20 @@ const Header = () => {
 
 	console.log(isScrolled)
 
-	return <div></div>
+	return (
+		<>
+			<header
+				className={`${
+					isScrolled && 'headerShow'
+				} fixed top-0 z-50 transition-all duration-500`}
+				style={{
+					backgroundColor: isScrolled ? '#fff' : 'transparent',
+					boxShadow: isScrolled ? '#48AFDE -10px 25px 50px 10px' : '',
+				}}>
+				<h1>testing</h1>
+			</header>
+		</>
+	)
 }
 
 export default Header
