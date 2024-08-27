@@ -1,6 +1,13 @@
 // the data for AboutMe component and slider component
 
-export const AboutData = [
+type AboutDataType = {
+	count: number
+	title: string
+	img: string
+	array: string[]
+}
+
+export const AboutData: AboutDataType[] = [
 	{
 		count: 1,
 		title: 'UI / UX Designer',
@@ -88,7 +95,15 @@ export const AboutData = [
 ]
 
 // for the slider
-export const DataArray = [
+type DataArrayType = {
+	title: string
+	name: string
+	des: string
+	des1: string
+	images: string[]
+}
+
+export const DataArray: DataArrayType[] = [
 	{
 		title: 'Personal Portfolio Website Using Reactjs',
 		name: 'Ultimate ReactJs portfolio',
