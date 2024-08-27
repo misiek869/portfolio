@@ -24,6 +24,14 @@ const Header = () => {
 
 	return (
 		<>
+			<div className={`diagonal-drawer ${isOpen ? 'open' : ''}`}>
+				<DiagonalDrawer
+					isOpen={isOpen}
+					setIsOpen={setIsOpen}
+					selectedIndexOne={selectedIndex1}
+					setSelectedIndexOne={setSelectedIndex1}
+				/>
+			</div>
 			<header
 				className={`${
 					isScrolled ? 'headerShow' : ''
