@@ -22,6 +22,15 @@ const SliderCard = ({
 						style={{ width: '100%', height: '80%' }}
 					/>
 				</div>
+				<div
+					className='absolute top-14 sm:left-12 rounded-lg bg-white h-[200px] lg:h-[350px] md:h-[300px] w-full'
+					style={{ boxShadow: '#48AFDE -10px 10px 20px 10px' }}>
+					<div className='relative  h-[200px] lg:h-[350px] md:h-[300px] w-[100%'>
+						<p className='absolute bottom-3 left-4 text-lg font-[300] capitalize'>
+							{item.name}
+						</p>
+					</div>
+				</div>
 			</div>
 		</>
 	)
