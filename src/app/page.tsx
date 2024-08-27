@@ -32,7 +32,7 @@ export default function HomePage() {
 						</p>
 					</div>
 				</div>
-				<div className=''>
+				<div style={{ transform: 'translate(0px,-150px)' }}>
 					<MySlider />
 				</div>
 			</div>
