@@ -112,28 +112,12 @@ export const DataArray: DataArrayType[] = [
 		images: ['/portfolio-image.jpg'],
 	},
 	{
-		title: 'Management Consulting Company Web Design',
-		name: 'edubaba Management Consultants',
-		des: 'We buit this project for edubaba  Management Consultants.',
-		des1: '',
-
-		images: ['/portfolio-image.jpg'],
-	},
-	{
 		title: 'Food Delivery Company WebSite',
 		name: 'Yum Food Company',
 		des: 'We did  this project for Yum Foods Located in USA.',
 		des1: "This website's graphic design is fantastic. Animated sliders are painstakingly built and created in WordPress with Revolution Slider. All of the product photos are photo manipulations created in Adobe Photoshop.",
 
 		images: ['/portfolio-image.jpg', '/portfolio-image.jpg'],
-	},
-	{
-		title: 'Real Estate and Property Management Project',
-		name: 'Inans Property Management ',
-		des: 'We built this project for inans group LTD',
-		des1: 'Aside from its gorgeous design, this website is backed by an outstanding plugin that allows owners and agencies to simply display different properties in the neighbourhood and create an online showcase in an appealing manner for home buyers and tenants..',
-
-		images: ['/portfolio-image.jpg'],
 	},
 	{
 		title: 'Crypto Trading Website',
