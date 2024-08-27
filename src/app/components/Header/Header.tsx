@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import DiagonalDrawer from './DiagonalDrawer'
 import Image from 'next/image'
+import '../Header/DiagonalDrawer.css'
 
 const Header = () => {
 	const [selectedIndexOne, setSelectedIndexOne] = useState<number>(0)
