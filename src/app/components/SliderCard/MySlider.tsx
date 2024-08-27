@@ -1,5 +1,8 @@
 import { DataArray } from '@/app/data'
 import SliderCard from './SliderCard'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 const MySlider = () => {
 	return (
