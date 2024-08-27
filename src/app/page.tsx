@@ -1,5 +1,6 @@
 'use client'
 import Home from './components/Home/Home'
+import MySlider from './components/SliderCard/MySlider'
 
 export default function HomePage() {
 	return (
@@ -30,6 +31,9 @@ export default function HomePage() {
 							placeat? Unde, totam quod.
 						</p>
 					</div>
+				</div>
+				<div className=''>
+					<MySlider />
 				</div>
 			</div>
 		</main>
