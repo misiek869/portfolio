@@ -1,5 +1,7 @@
 import { DataArrayType } from '@/app/data'
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 type PortfolioDesignProps = {
 	data: DataArrayType
