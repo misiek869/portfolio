@@ -1,7 +1,13 @@
-import React from 'react'
+import { DataArrayType } from '@/app/data'
 
-const SliderCard = () => {
-	return <div></div>
+const SliderCard = ({
+	item,
+	index,
+}: {
+	item: DataArrayType
+	index: number
+}) => {
+	return <></>
 }
 
 export default SliderCard

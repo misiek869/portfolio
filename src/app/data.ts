@@ -1,6 +1,6 @@
 // the data for AboutMe component and slider component
 
-type AboutDataType = {
+export type AboutDataType = {
 	count: number
 	title: string
 	img: string
@@ -95,7 +95,7 @@ export const AboutData: AboutDataType[] = [
 ]
 
 // for the slider
-type DataArrayType = {
+export type DataArrayType = {
 	title: string
 	name: string
 	des: string
