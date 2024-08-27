@@ -9,7 +9,30 @@ type PortfolioDesignProps = {
 	dataArray: DataArrayType[]
 }
 
-const index = ({ data, id, dataArray }: PortfolioDesignProps) => {
+const Index = ({ data, id, dataArray }: PortfolioDesignProps) => {
+	const router = useRouter()
+	const [next, setNext] = useState<number | undefined>()
+	const [prev, setPrev] = useState<number | undefined>()
+
+	// useEffect(() => {
+	// 	if (JSON.parse(id) === dataArray.length - 1) {
+	// 		setNext(0)
+	// 	} else {
+	// 		setNext(JSON.parse(id) + 1)
+	// 	}
+	// 	if (JSON.parse(id) === 0) {
+	// 		setPrev(dataArray.length - 1)
+	// 	} else {
+	// 		setPrev(JSON.parse(id) - 1)
+	// 	}
+	// }, [dataArray.length, id])
+
+	useEffect(() => {
+		const currentIndex = JSON.parse(id)
+		setNext(currentIndex === dataArray.length - 1 ? 0 : currentIndex + 1)
+		setPrev(currentIndex === 0 ? dataArray.length - 1 : currentIndex - 1)
+	}, [dataArray.length, id])
+
 	return (
 		<>
 			<div className='overlay h-[400px] lg:top-[96px] sm:top-0 z-20 border-t border-gray-300'></div>
@@ -94,8 +117,62 @@ const index = ({ data, id, dataArray }: PortfolioDesignProps) => {
 					</div>
 				</div>
 			</div>
+			<div className='relative flex bg-accent-color h-48  text-white'>
+				{prev !== undefined && prev >= 0 && (
+					<div
+						className='group w-1/2 flex items-center justify-center bg-cover'
+						style={{
+							backgroundImage: `url(${dataArray[prev]?.images[0]})`,
+						}}>
+						<a
+							className='flex justify-center group:hover:bg-[#223740] cursor-pointer transition-colors duration-300 bg-[#405B66]  bg-opacity-90 items-center w-full h-full'
+							onClick={() => router.push(`/portfoliodetail/${prev}`)}>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								fill='none'
+								viewBox='0 0 24 24'
+								strokeWidth='2'
+								stroke='currentColor'
+								aria-hidden='true'
+								className='transform transition-transform group-hover:-translate-x-3 duration-300 w-5 h-5 mr-2'>
+								<path
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									d='M7 16l-4-4m0 0l4-4m-4 4h18'></path>
+							</svg>
+							Previous Project
+						</a>
+					</div>
+				)}
+				{next !== undefined && next >= 0 && (
+					<div
+						className='group w-1/2 flex items-center justify-center bg-cover'
+						style={{
+							backgroundImage: `url(${dataArray[next]?.images[0]})`,
+						}}>
+						<a
+							className='flex justify-center group:hover:bg-[#223740] cursor-pointer transition-colors duration-300 bg-[#405B66]  bg-opacity-90 items-center w-full h-full'
+							onClick={() => router.push(`/portfoliodetail/${next}`)}>
+							Next Project
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke-width='2'
+								stroke='currentColor'
+								aria-hidden='true'
+								className='transform transition-transform group-hover:translate-x-3 duration-300 w-5 h-5 ml-2'>
+								<path
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									d='M17 8l4 4m0 0l-4 4m4-4H3'></path>
+							</svg>
+						</a>
+					</div>
+				)}
+			</div>
 		</>
 	)
 }
 
-export default index
+export default Index
