@@ -48,8 +48,8 @@ const DiagonalDrawer = ({
 								stroke='currentColor'
 								className='w-12 h-12 text-white'>
 								<path
-									stroke-linecap='round'
-									stroke-linejoin='round'
+									strokeLinecap='round'
+									strokeLinejoin='round'
 									d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12'
 								/>
 							</svg>
@@ -159,9 +159,9 @@ const DiagonalDrawer = ({
 									<svg
 										stroke='currentColor'
 										fill='currentColor'
-										stroke-width='0'
+										strokeWidth='0'
 										viewBox='0 0 496 512'
-										class='w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3'
+										className='w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3'
 										height='1em'
 										width='1em'
 										xmlns='http://www.w3.org/2000/svg'>
@@ -175,9 +175,9 @@ const DiagonalDrawer = ({
 									<svg
 										stroke='currentColor'
 										fill='currentColor'
-										stroke-width='0'
+										strokeWidth='0'
 										viewBox='0 0 448 512'
-										class='w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3'
+										className='w-6 h-6 sm:w-8 sm:h-8 mb-0 sm:mb-5 lg:mb-0 mx-3 sm:mx-0 lg:mx-3'
 										height='1em'
 										width='1em'
 										xmlns='http://www.w3.org/2000/svg'>
