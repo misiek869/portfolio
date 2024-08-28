@@ -88,7 +88,7 @@ const About = () => {
 							{AboutData.map((item, index) => {
 								return (
 									<a
-										className={`relative cursor-pointer transition-all transform duration-300 group rounded-xl center p-6 lg:p-10 flex flex-col justify-center  items-center ${
+										className={`relative cursor-pointer transition-all transform duration-300 group rounded-md center p-6 lg:p-10 flex flex-col justify-center  items-center ${
 											selectedIndex == index
 												? ' -translate-y-2 bg-[#476571]'
 												: 'hover:bg-[#476571] hover:shadow-xl hover:-translate-y-2 bg-white'
@@ -104,6 +104,20 @@ const About = () => {
 												src={item.img}
 												alt='internet issues'
 											/>
+										</div>
+										<h4
+											className={`text-center text-sm lg:text-xl transition-colors duration-500 group-hover:text-white text-[#47626D] mt-3 ${
+												selectedIndex === index ? 'text-white' : ''
+											}`}>
+											{item.title}
+										</h4>
+										<div
+											className={`absolute -top-2 -right-2 transform transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl w-12 h-12 rounded-md bg-[#476571] flex justify-center items-center font-bold text-white text-xl  ${
+												selectedIndex === index
+													? 'opacity-100 rotate-12'
+													: 'group-hover:rotate-12'
+											}`}>
+											{item.count}
 										</div>
 									</a>
 								)
