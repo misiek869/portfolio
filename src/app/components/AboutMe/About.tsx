@@ -129,7 +129,7 @@ const About = () => {
 								className={`fade-left overflow-hidden ${
 									isFaded ? 'fade-out' : ''
 								}`}>
-								<p className='text-[#47626D] text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100 undefined undefined'>
+								<p className='text-[#47626D] text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100 undefined undefined mb-2'>
 									My skills as:
 								</p>
 								<h2 className=' text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100 undefined undefined'>
@@ -143,6 +143,53 @@ const About = () => {
 									))}
 								</ul>
 							</section>
+							<div
+								className={`absolute perspective-500 -top-7 sm:top-30 right-0 sm:-right-20 card ${
+									isFlipped ? 'flipped' : ''
+								}`}>
+								<div className='card-inner'>
+									<div className='rounded-md cursor-pointer  text-7xl  xl:text-9xl font-recoletaBlack text-white bg-[#47626D]  p-5 xl:p-8 w-28 h-28 xl:w-48 xl:h-48  transform transition duration-500 transform-preserve -rotate-6 transform-preserve'>
+										<span className='text-2xl xl:text-6xl mr-2 sm:mr-3'>*</span>
+										{mapData.count}
+									</div>
+								</div>
+							</div>
+							<div className='absolute right-10 -bottom-5 flex'>
+								<a
+									onClick={HandlePrevious}
+									className='w-12 h-12 rounded-md mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-[#47626D]'>
+									<svg
+										xmlns='http://www.w3.org/2000/svg'
+										fill='none'
+										viewBox='0 0 24 24'
+										stroke-width='2'
+										stroke='currentColor'
+										aria-hidden='true'
+										className='w-6 h-6 text-white'>
+										<path
+											stroke-linecap='round'
+											stroke-linejoin='round'
+											d='M15 19l-7-7 7-7'></path>
+									</svg>
+								</a>
+								<a
+									onClick={HandleNext}
+									className='w-12 h-12 rounded-md mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-[#47626D]'>
+									<svg
+										xmlns='http://www.w3.org/2000/svg'
+										fill='none'
+										viewBox='0 0 24 24'
+										stroke-width='2'
+										stroke='currentColor'
+										aria-hidden='true'
+										className='w-6 h-6 text-white'>
+										<path
+											stroke-linecap='round'
+											stroke-linejoin='round'
+											d='M9 5l7 7-7 7'></path>
+									</svg>
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
