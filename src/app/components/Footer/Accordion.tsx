@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { Transition } from '@headlessui/react'
 
 const Accordion = ({
 	title,
@@ -36,7 +37,7 @@ const Accordion = ({
 					</svg>
 				</div>
 			</div>
-			{/* 
+
 			<Transition
 				show={isOpen}
 				enter='transition duration-200 ease-in'
@@ -46,7 +47,9 @@ const Accordion = ({
 				leaveFrom='opacity-100'
 				leaveTo='opacity-0'>
 				{ref => (
-					<div ref={ref} className='p-4 bg-[#232323]'>
+					<div
+						ref={ref as React.Ref<HTMLDivElement>}
+						className='p-4 bg-[#232323]'>
 						{content.map(item => (
 							<p key={item} className='py-1 text-gray-400 font-sans'>
 								{item}
@@ -54,7 +57,7 @@ const Accordion = ({
 						))}
 					</div>
 				)}
-			</Transition> */}
+			</Transition>
 		</div>
 	)
 }
