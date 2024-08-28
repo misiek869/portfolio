@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { AboutData, AboutDataType } from '@/app/data'
 import Image from 'next/image'
+import './about.css'
 
 const About = () => {
 	const [isFlipped, setIsFlipped] = useState<boolean>(false)
