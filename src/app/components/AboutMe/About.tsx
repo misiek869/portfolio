@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { AboutData, AboutDataType } from '@/app/data'
+import Image from 'next/image'
 
 const About = () => {
 	const [isFlipped, setIsFlipped] = useState<boolean>(false)
@@ -80,7 +81,37 @@ const About = () => {
 					backgroundImage: 'linear-gradient(45deg, #EAF7FC  70%,#48AFDE 30%)',
 					width: '100%',
 				}}
-				className='lg:-mt-60'></div>
+				className='lg:-mt-60'>
+				<section className='container flex  flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px sm:mt-0] transform translate-y-[-100px]'>
+					<div className='hidden sm:flex w-full sm:w-1/2 lg:w-7/12'>
+						<div className='grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10'>
+							{AboutData.map((item, index) => {
+								return (
+									<a
+										className={`relative cursor-pointer transition-all transform duration-300 group rounded-xl center p-6 lg:p-10 flex flex-col justify-center  items-center ${
+											selectedIndex == index
+												? ' -translate-y-2 bg-[#476571]'
+												: 'hover:bg-[#476571] hover:shadow-xl hover:-translate-y-2 bg-white'
+										}`}
+										style={{ boxShadow: '#48AFDE -5px  10px 20px 0px' }}
+										onClick={() => handleCardClick(item, index)}
+										href=''
+										key={index}>
+										<div className='w-16 h-16 sm:w-10 sm:h-10  lg:w-16 lg:h-16'>
+											<Image
+												height={100}
+												width={100}
+												src={item.img}
+												alt='internet issues'
+											/>
+										</div>
+									</a>
+								)
+							})}
+						</div>
+					</div>
+				</section>
+			</div>
 		</>
 	)
 }
