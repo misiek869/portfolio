@@ -1,5 +1,6 @@
 'use client'
 import About from './components/AboutMe/About'
+import Cta from './components/CallToAction/Cta'
 import Home from './components/Home/Home'
 import MySlider from './components/SliderCard/MySlider'
 
@@ -38,6 +39,7 @@ export default function HomePage() {
 				</div>
 			</div>
 			<About />
+			<Cta />
 		</main>
 	)
 }
