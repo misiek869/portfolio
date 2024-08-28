@@ -1,4 +1,5 @@
 'use client'
+import About from './components/AboutMe/About'
 import Home from './components/Home/Home'
 import MySlider from './components/SliderCard/MySlider'
 
@@ -36,6 +37,7 @@ export default function HomePage() {
 					<MySlider />
 				</div>
 			</div>
+			<About />
 		</main>
 	)
 }
