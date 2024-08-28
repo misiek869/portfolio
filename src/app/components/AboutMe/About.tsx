@@ -1,6 +1,43 @@
-import React from 'react'
+'use client'
+import { useState } from 'react'
+import { AboutData, AboutDataType } from '@/app/data'
 
 const About = () => {
+	const [isFlipped, setIsFlipped] = useState<boolean>(false)
+	const [isFaded, setIsFaded] = useState<boolean>(false)
+	const [selectedIndex, setSelectedIndex] = useState<number>(0)
+	const [mapData, setMapData] = useState<AboutDataType>(AboutData[0])
+
+	const myFunctions = (data: AboutDataType) => {
+		setIsFlipped(false)
+		setIsFaded(false)
+		setMapData(data)
+	}
+
+	const handleCardClick = (data: AboutDataType, index: number) => {
+		setIsFlipped(true)
+		setIsFaded(true)
+		setSelectedIndex(index)
+
+		setTimeout(() => myFunctions(data), 600)
+	}
+
+	const HandleNext = () => {
+		if (selectedIndex < 5) {
+			handleCardClick(AboutData[selectedIndex + 1], selectedIndex + 1)
+		} else {
+			handleCardClick(AboutData[0], 0)
+		}
+	}
+
+	const HandlePrevious = () => {
+		if (selectedIndex !== 0) {
+			handleCardClick(AboutData[selectedIndex - 1], selectedIndex - 1)
+		} else {
+			handleCardClick(AboutData[5], 5)
+		}
+	}
+
 	return (
 		<>
 			<div
