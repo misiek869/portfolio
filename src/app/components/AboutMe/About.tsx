@@ -89,13 +89,12 @@ const About = () => {
 								return (
 									<a
 										className={`relative cursor-pointer transition-all transform duration-300 group rounded-md center p-6 lg:p-10 flex flex-col justify-center  items-center ${
-											selectedIndex == index
+											selectedIndex === index
 												? ' -translate-y-2 bg-[#476571]'
 												: 'hover:bg-[#476571] hover:shadow-xl hover:-translate-y-2 bg-white'
 										}`}
 										style={{ boxShadow: '#48AFDE -5px  10px 20px 0px' }}
 										onClick={() => handleCardClick(item, index)}
-										href=''
 										key={index}>
 										<div className='w-16 h-16 sm:w-10 sm:h-10  lg:w-16 lg:h-16'>
 											<Image
@@ -122,6 +121,28 @@ const About = () => {
 									</a>
 								)
 							})}
+						</div>
+					</div>
+					<div className='w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10'>
+						<div className='bg-white  lg:mt-0 mt-10 rounded-md p-10 xl:p-12 shadow-accent-color relative'>
+							<section
+								className={`fade-left overflow-hidden ${
+									isFaded ? 'fade-out' : ''
+								}`}>
+								<p className='text-[#47626D] text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100 undefined undefined'>
+									My skills as:
+								</p>
+								<h2 className=' text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100 undefined undefined'>
+									{mapData?.title}
+								</h2>
+								<ul className='font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform  opacity-100 undefined undefined'>
+									{mapData?.array?.map(obj => (
+										<li key={obj} className='mb-2'>
+											{obj}
+										</li>
+									))}
+								</ul>
+							</section>
 						</div>
 					</div>
 				</section>
