@@ -114,7 +114,7 @@ const Header = () => {
 								<span className='menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
 							)}
 							<a
-								href='/#home'
+								href='/#about'
 								onClick={() => setSelectedIndexOne(3)}
 								className={`menu-item ${
 									selectedIndexOne === 3 ? 'text-black' : ''
