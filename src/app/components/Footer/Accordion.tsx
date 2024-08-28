@@ -1,6 +1,12 @@
 import React from 'react'
 
-const Accordion = () => {
+const Accordion = ({
+	title,
+	content,
+}: {
+	title: string
+	content: string[]
+}) => {
 	return <div></div>
 }
 

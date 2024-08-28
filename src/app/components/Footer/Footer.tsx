@@ -1,15 +1,15 @@
-import React from 'react'
+import Accordion from './Accordion'
 
 const Footer = () => {
-	const service = [
+	const service: string[] = [
 		'Company Review',
 		'Accounts Review',
 		'HR Consulting',
 		'SEO Optimisation',
 	]
-	const company = ['About', 'Meet the Team', 'Accounts Review']
-	const helping = ['Contact', 'FAQs', 'Live Chat']
-	const legal = [
+	const company: string[] = ['About', 'Meet the Team', 'Accounts Review']
+	const helping: string[] = ['Contact', 'FAQs', 'Live Chat']
+	const legal: string[] = [
 		'Accessibility',
 		'Returns Policy',
 		'Refund Policy',
@@ -51,6 +51,11 @@ const Footer = () => {
 			<footer className='bg-[#232323]'>
 				<div className='mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8'>
 					<div className='container mx-auto p-4 md:hidden block mt-10'>
+						<Accordion title='Services' content={service} />
+						<Accordion title='Company' content={company} />
+						<Accordion title='Helpful Links' content={helping} />
+						<Accordion title='Legal Policy' content={legal} />
+
 						<div className='md:hidden block'>
 							<div className='text-teal-600 flex justify-center mt-10'>
 								<svg
