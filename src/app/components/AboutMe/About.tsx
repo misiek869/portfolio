@@ -106,7 +106,7 @@ const About = () => {
 											/>
 										</div>
 										<h4
-											className={`text-center text-sm lg:text-xl transition-colors duration-500 group-hover:text-white text-[#47626D] mt-3 ${
+											className={`text-center text-sm lg:text-xl transition-colors duration-500 group-hover:text-white  mt-3 ${
 												selectedIndex === index ? 'text-white' : ''
 											}`}>
 											{item.title}
