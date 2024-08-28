@@ -2,6 +2,7 @@
 import About from './components/AboutMe/About'
 import Home from './components/Home/Home'
 import MySlider from './components/SliderCard/MySlider'
+import Testimonial from './components/testimonial/Testimonial'
 
 export default function HomePage() {
 	return (
@@ -38,6 +39,7 @@ export default function HomePage() {
 				</div>
 			</div>
 			<About />
+			<Testimonial />
 		</main>
 	)
 }
