@@ -27,8 +27,18 @@ const ContactPage = () => {
 				</div>
 				<div className='px-[20px]'>
 					<div className='sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full'>
-            
-          </div>
+						<div className='flex flex-col flex-1 xl:flex-row gap-[20px]'>
+							<div
+								className='flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white'
+								style={{ boxShadow: '#48AFDE -1px 1px 10px 0px' }}>
+								<div className='flex items-center gap-[15px]'>
+									<div>
+										<FaLocationDot size={40} color='#48AFDE' />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>
