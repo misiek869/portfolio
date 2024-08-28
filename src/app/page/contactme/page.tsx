@@ -9,7 +9,15 @@ import { ToastClassName, ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 export default function Page() {
-	const [state, setState] = useState({
+	type FormState = {
+		name: string
+		email: string
+		phoneNumber: string
+		subject: string
+		message: string
+	}
+
+	const [state, setState] = useState<FormState>({
 		name: '',
 		email: '',
 		phoneNumber: '',
@@ -17,18 +25,20 @@ export default function Page() {
 		message: '',
 	})
 
-	const [loading, setLoading] = useState(false)
+	const [loading, setLoading] = useState<boolean>(false)
 
-	const handleChange = e => {
-		const key = e.target.name
-		const value = e.target.value
+	const handleChange = (
+		e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+	) => {
+		const { name, value } = e.target
+
 		setState({
 			...state,
-			[key]: value,
+			[name]: value,
 		})
 	}
 
-	const handlePhoneChange = e => {
+	const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const value = e.target.value
 		const numericValue = value.replace(/[^0-9]/g, '')
 		setState({ ...state, phoneNumber: numericValue })
@@ -44,36 +54,38 @@ export default function Page() {
 		})
 	}
 
-	const handleSubmit = e => {
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		setLoading(true)
-		let data = {
+
+		const data: FormState = {
 			...state,
 		}
-		fetch('/api/contact', {
-			method: 'POST',
-			headers: {
-				Accept: 'application/json, text/plain, */*',
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(data),
-		})
-			.then(async res => {
-				setLoading(false)
-				const response = await res.json()
-				if (!response.error) {
-					clearState()
-					toast(response.message)
-				} else {
-					clearState()
-					toast('something went wrong')
-				}
+
+		try {
+			const res = await fetch('/api/contact', {
+				method: 'POST',
+				headers: {
+					Accept: 'application/json, text/plain, */*',
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(data),
 			})
-			.catch(e => {
-				setLoading(false)
+
+			const response = await res.json()
+			setLoading(false)
+			if (!response.error) {
+				clearState()
+				toast(response.message)
+			} else {
 				clearState()
 				toast('something went wrong')
-			})
+			}
+		} catch (error) {
+			setLoading(false)
+			clearState()
+			toast('something went wrong')
+		}
 	}
 
 	return (
@@ -215,8 +227,9 @@ export default function Page() {
 				id='contact'
 				className='flex flex-col xl:flex-row justify-center gap-[60px] mt-[10px] px-[30px] max-w-[1105px] m-auto p-10 mb-[-100px]'>
 				<div
-					className='hidden md:block relative w-[50%] xl:w-[50%] h-[550px] rounded-xl md:w-full lg:w-[50%] bg-center bg-cover'
-					style={{ backgroundImage: `url('/customer-care.png')` }}>
+					className='hidden md:block relative w-[50%] xl:w-[50%] h-[550px] rounded-md md:w-full lg:w-[50%] bg-center bg-cover'
+					// style={{ backgroundImage: `url('/customer-care.png')` }}
+				>
 					<div className='absolute h-full w-full bg-gradient-to-t from-[#223740] via-[#223740] shadow-inner opacity-70'></div>
 					<div className='absolute inset-0 flex flex-col gap-[20px] items-center justify-center text-white shadow-lg p-6'>
 						<div className='text-4xl xl:mt-[150px] mt-0 rounded-full px-[15px] py-[15px] bg-[#48AFDE] text-white'>
@@ -239,12 +252,11 @@ export default function Page() {
 					</div>
 				</div>
 				<div className='flex flex-col gap-[20px]'>
-					<div className='text-center w-[100px] bg-red-500 py-[1px] tracking-wide uppercase font-300 font-sans text-[14px] text-white rounded-lg'>
-						Contact Us
+					<div className='text-center w-[100px] bg-red-500 py-[1px] tracking-wide uppercase font-300 font-sans text-[14px] text-white rounded-md'>
+						Contact Me
 					</div>
 					<div className=''>
 						<p className='text-[30px] text-[#48AFDE]'>
-							{' '}
 							Request A Call Back ! Feel Free To Reach & Contact Us.
 						</p>
 					</div>
@@ -253,7 +265,7 @@ export default function Page() {
 							<input
 								type='text'
 								name='name'
-								placeholder='Your Name..'
+								placeholder='Your Name...'
 								required
 								onChange={handleChange}
 								value={state.name}
@@ -262,7 +274,7 @@ export default function Page() {
 							<input
 								type='email'
 								name='email'
-								placeholder='Your Email..'
+								placeholder='Your Email...'
 								required
 								onChange={handleChange}
 								value={state.email}
@@ -273,7 +285,7 @@ export default function Page() {
 							<input
 								type='text'
 								name='phoneNumber'
-								placeholder='Your Number..'
+								placeholder='Your Number...'
 								required
 								onChange={handlePhoneChange}
 								value={state.phoneNumber}
@@ -282,7 +294,7 @@ export default function Page() {
 							<input
 								type='text'
 								name='subject'
-								placeholder='Your Subject..'
+								placeholder='Your Subject...'
 								required
 								onChange={handleChange}
 								value={state.subject}
@@ -293,7 +305,7 @@ export default function Page() {
 							<textarea
 								required
 								name='message'
-								placeholder='Your Message..'
+								placeholder='Your Message...'
 								onChange={handleChange}
 								value={state.message}
 								className='px-[12px] outline-none h-[180px] w-full rounded-md py-[12px] flex-1 bg-gray-200'
@@ -303,7 +315,7 @@ export default function Page() {
 							{loading && (
 								<div className='mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rounded-full'></div>
 							)}
-							<button className='bg-[#48AFDE] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-lg text-white'>
+							<button className='bg-[#48AFDE] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-md text-white'>
 								Send Us Message
 							</button>
 						</div>
