@@ -87,7 +87,7 @@ export async function POST(request) {
 		if (info.messageId) {
 			return NextResponse.json({
 				error: false,
-				message: 'Message successfully sent! Thank you for contacting Edubaba',
+				message: 'Message successfully sent! Thank you for contact',
 			})
 		}
 		return NextResponse.json({
