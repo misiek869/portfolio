@@ -37,23 +37,18 @@ const Header = () => {
 			<header
 				className={`${
 					isScrolled ? 'headerShow' : ''
-				} w-full fixed top-0 z-50 transition-all duration-500`}
-				// style={{
-				// 	backgroundColor: isScrolled ? '#fff' : 'transparent',
-				// 	boxShadow: isScrolled ? '#48AFDE -10px 25px 50px 10px' : '',
-				// }}
-			>
+				} w-full fixed top-0 z-50 transition-all duration-500`}>
 				<div className='relative'>
 					<div
-						className='z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-orange flex justify-center items-center rounded-br-3xl'
+						className='z-30 absolute cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-orange flex justify-center items-center rounded-br-xl'
 						onClick={openDrawer}>
-						<div className='relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center'>
+						<div className='relative flex justify-center items-center'>
 							<Image
 								height={100}
 								width={100}
-								src='/drawer.png'
+								src='/hamburger-menu-svgrepo-com.svg'
 								alt='drawer item'
-								className='w-[150px] h-10'></Image>
+								className='w-14 h-14 color-white '></Image>
 						</div>
 					</div>
 				</div>
