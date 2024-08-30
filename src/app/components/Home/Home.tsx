@@ -121,7 +121,7 @@ const Home = () => {
 									<a
 										href='script.js.pdf'
 										download='script script.pdf'
-										className='ml-10 cursor-pointer inline-block bg-[#197278] transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#BFC8AD] hover:shadow-md transform hover:translate-y-1 tracking-wider'>
+										className='ml-10 cursor-pointer inline-block bg-orange transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#BFC8AD] hover:shadow-md transform hover:translate-y-1 tracking-wider'>
 										my resume
 									</a>
 								</div>
