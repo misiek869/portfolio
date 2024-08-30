@@ -92,9 +92,10 @@ const Home = () => {
 			<div
 				id='home'
 				style={{
-					backgroundImage:
-						'linear-gradient(62deg, #F7F3E3 0 50%, #C44536 0% 100%)',
+					// backgroundImage:
+					// 	'linear-gradient(62deg, #F7F3E3 0 50%, #C44536 0% 100%)',
 					minHeight: '500px',
+					backgroundColor: '#197278',
 					maxHeight: '1200px',
 					height: '100%',
 					width: '100%',
