@@ -23,7 +23,7 @@ const DiagonalDrawer = ({
 				<div
 					className={`z-50 ${
 						pathName === '/' ? 'top-[0px]' : 'top-[0px]'
-					} cursor-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-[#48AFDE] top-0 flex justify-center items-center rounded-br-3xl `}>
+					} cursor-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-red-400 top-0 flex justify-center items-center rounded-br-3xl `}>
 					<div className='relative flex justify-center items-center w-7 h-7 lg:w-10 lg:h-10 '>
 						{isOpen ? (
 							<svg
