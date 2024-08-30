@@ -10,6 +10,7 @@ const config: Config = {
 		extend: {
 			colors: {
 				orange: 'hsl(var(--orange))',
+				gray: 'hsl(var(--gray))',
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
