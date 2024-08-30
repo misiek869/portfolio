@@ -101,11 +101,11 @@ const Home = () => {
 					width: '100%',
 				}}>
 				<div className='container m-auto'>
-					<div className='grid grid-cols-12'>
+					<div className='grid grid-cols-12 text-white'>
 						<div className='bg-white flex flex-col justify-center col-span-12 md:col-span-5 md:bg-transparent'>
 							<div className='container m-auto'>
 								<div className='lg:pl-24 sm:pl-10 pl-0 py-20 md:py-0 md:text-start text-center'>
-									<p className={`text-3xl md:text-base lg:text-2xl`}>Hello</p>
+									<p className='text-3xl md:text-base lg:text-2xl '>Hello</p>
 									<h1 className='text-5xl md:text-5xl lg:text-7xl xl:text-7xl mt-5 md:mt-3'>
 										I'm Michael
 									</h1>
@@ -114,14 +114,14 @@ const Home = () => {
 									</h2>
 									<a
 										href='/#portfolio'
-										className=' cursor-pointer inline-block bg-[#C44536] transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#BFC8AD] hover:shadow-md transform hover:translate-y-1'>
-										projects
+										className=' cursor-pointer inline-block bg-[#C44536] transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#BFC8AD] hover:shadow-md transform hover:translate-y-1 tracking-wider'>
+										my projects
 									</a>
 
 									<a
 										href='script.js.pdf'
 										download='script script.pdf'
-										className='ml-10 cursor-pointer inline-block bg-[#197278] transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#BFC8AD] hover:shadow-md transform hover:translate-y-1'>
+										className='ml-10 cursor-pointer inline-block bg-[#197278] transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#BFC8AD] hover:shadow-md transform hover:translate-y-1 tracking-wider'>
 										my resume
 									</a>
 								</div>
