@@ -129,7 +129,7 @@ const Home = () => {
 						</div>
 						<div className='col-span-12 pt-[50px] md:bg-transparent  md:pt-[130px] md:col-span-7'>
 							<div className='container m-auto'>
-								<img src='/michal.png' alt='michal' decoding='async' />
+								<img src='/michal.webp' alt='michal' decoding='async' />
 							</div>
 						</div>
 					</div>
