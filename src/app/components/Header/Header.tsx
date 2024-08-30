@@ -38,10 +38,11 @@ const Header = () => {
 				className={`${
 					isScrolled ? 'headerShow' : ''
 				} w-full fixed top-0 z-50 transition-all duration-500`}
-				style={{
-					backgroundColor: isScrolled ? '#fff' : 'transparent',
-					boxShadow: isScrolled ? '#48AFDE -10px 25px 50px 10px' : '',
-				}}>
+				// style={{
+				// 	backgroundColor: isScrolled ? '#fff' : 'transparent',
+				// 	boxShadow: isScrolled ? '#48AFDE -10px 25px 50px 10px' : '',
+				// }}
+			>
 				<div className='relative'>
 					<div
 						className='z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-[#48AFDE] flex justify-center items-center rounded-br-3xl'
