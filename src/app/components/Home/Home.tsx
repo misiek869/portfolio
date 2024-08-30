@@ -114,14 +114,14 @@ const Home = () => {
 									</h2>
 									<a
 										href='/#portfolio'
-										className=' cursor-pointer inline-block bg-orange transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#BFC8AD] hover:shadow-md transform hover:translate-y-1 tracking-wider'>
+										className=' cursor-pointer inline-block bg-orange transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-medium mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-gray hover:shadow-md transform hover:translate-y-1 tracking-wider'>
 										my projects
 									</a>
 
 									<a
 										href='script.js.pdf'
 										download='script script.pdf'
-										className='ml-10 cursor-pointer inline-block bg-orange transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-bold mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-[#BFC8AD] hover:shadow-md transform hover:translate-y-1 tracking-wider'>
+										className='ml-10 cursor-pointer inline-block bg-orange transition-all duration-300 ease-in-out rounded-md py-3 px-5 font-medium mt-8 uppercase md:py-2 lg:py-3 lg:px-8 md:text-xs lg:text-base md:mt-5 xl:mt-10 hover:bg-gray hover:shadow-md transform hover:translate-y-1 tracking-wider'>
 										my resume
 									</a>
 								</div>
@@ -136,39 +136,44 @@ const Home = () => {
 					<div className='container m-auto absolute'>
 						<div className='px-3'>
 							<div
-								className='relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-md z-20'
-								style={{ boxShadow: '#C44536 -10px 25px 50px 10px' }}>
-								<div className='lg:py-10 md:py-6 sm:py-6 cursor cursor-all-scroll'>
+								className='relative max-w-sm bottom-[70px] md:max-w-4xl xl:max-w-3xl px-5 lg:px-10 overflow-auto mx-auto bg-white rounded-md z-20 border-gray border '
+								style={{ boxShadow: 'gray 14px 13px 34px -23px' }}>
+								<div className='py-4 lg:py-8 cursor cursor-all-scroll'>
 									<Slider {...settings}>
 										<img
-											src='/html_logo.png'
-											alt='html logo'
-											// className='h-12 w-12'
+											src={`/html-icon.svg`}
+											alt='html Logo'
+											className='h-12 w-12'
 										/>
 										<img
-											src='/css_logo.png'
-											alt='css logo'
-											// className='h-12 w-12'
+											src={`/css-icon.svg`}
+											alt='css Logo'
+											className='h-12 w-12'
 										/>
 										<img
-											src='/javascript_logo.png'
-											alt='javascript logo'
-											// className='h-12 w-12'
+											src={`/javascript-icon.svg`}
+											alt='javascript Logo'
+											className='h-12 w-12'
 										/>
 										<img
-											src='/typescript_loto.png'
-											alt='typescript_loto'
-											// className='h-12 w-12'
+											src={`/typescript-icon.svg`}
+											alt='typescript Logo'
+											className='h-12 w-12'
 										/>
 										<img
-											src='/react_logo.png'
-											alt='react logo'
-											// className='h-12 w-12'
+											src={`/react-icon.svg`}
+											alt='react Logo'
+											className='h-12 w-12'
 										/>
 										<img
-											src='/next_logo.png'
-											alt='next logo'
-											// className='h-12 w-12'
+											src={`/nextjs-icon.svg`}
+											alt='nextjs Logo'
+											className='h-12 w-12'
+										/>
+										<img
+											src={`/tailwind-icon.svg`}
+											alt='tailwind Logo'
+											className='h-12 w-12'
 										/>
 									</Slider>
 								</div>
