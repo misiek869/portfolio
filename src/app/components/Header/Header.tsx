@@ -24,6 +24,9 @@ const Header = () => {
 		setIsOpen(true)
 	}
 
+	const liStyles =
+		'group text-xl relative font-medium mr-20 tracking-wide uppercase'
+
 	return (
 		<>
 			<div className={`diagonal-drawer ${isOpen ? 'open' : ''}`}>
@@ -54,8 +57,8 @@ const Header = () => {
 				</div>
 
 				<nav className='invisible xl:visible xl:max-w-4xl 2xl:max-w-xl mx-auto '>
-					<ul className='flex flex-row align-items-center h-24'>
-						<li className='group text-2xl relative font-bold mr-20'>
+					<ul className='flex flex-row align-items-center h-16 items-center'>
+						<li className={liStyles}>
 							{selectedIndexOne === 0 ? (
 								<span className='menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
 							) : (
@@ -65,13 +68,13 @@ const Header = () => {
 								href='/#home'
 								onClick={() => setSelectedIndexOne(0)}
 								className={`menu-item ${
-									selectedIndexOne === 0 ? 'text-black' : ''
-								} text-[#666d47] group-hover:text-black`}>
+									selectedIndexOne === 0 ? 'text-orange' : ''
+								} text-white group-hover:text-black`}>
 								Home
 							</a>
 						</li>
 
-						<li className='group text-2xl relative font-bold mr-20'>
+						<li className={liStyles}>
 							{selectedIndexOne === 1 ? (
 								<span className='menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
 							) : (
@@ -81,13 +84,13 @@ const Header = () => {
 								href='/#home'
 								onClick={() => setSelectedIndexOne(1)}
 								className={`menu-item ${
-									selectedIndexOne === 1 ? 'text-black' : ''
-								} text-[#666d47] group-hover:text-black`}>
+									selectedIndexOne === 1 ? 'text-orange' : ''
+								} text-white group-hover:text-black`}>
 								Portfolio
 							</a>
 						</li>
 
-						<li className='group text-2xl relative font-bold mr-20'>
+						<li className={liStyles}>
 							{selectedIndexOne === 2 ? (
 								<span className='menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
 							) : (
@@ -97,13 +100,13 @@ const Header = () => {
 								href='/page/contactme'
 								onClick={() => setSelectedIndexOne(2)}
 								className={`menu-item ${
-									selectedIndexOne === 2 ? 'text-black' : ''
-								} text-[#666d47] group-hover:text-black`}>
+									selectedIndexOne === 2 ? 'text-orange' : ''
+								} text-white group-hover:text-black`}>
 								Contact Me
 							</a>
 						</li>
 
-						<li className='group text-2xl relative font-bold mr-20'>
+						<li className={liStyles}>
 							{selectedIndexOne === 3 ? (
 								<span className='menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
 							) : (
@@ -113,8 +116,8 @@ const Header = () => {
 								href='/#about'
 								onClick={() => setSelectedIndexOne(3)}
 								className={`menu-item ${
-									selectedIndexOne === 3 ? 'text-black' : ''
-								} text-[#666d47] group-hover:text-black`}>
+									selectedIndexOne === 3 ? 'text-orange' : ''
+								} text-white group-hover:text-black`}>
 								About
 							</a>
 						</li>
