@@ -6,7 +6,7 @@
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
-	--orange: 255, 153, 51;
+	--orange: 30, 100%, 60%;
 }
 
 body {
