@@ -23,8 +23,10 @@ const DiagonalDrawer = ({
 				<div
 					className={`z-50 ${
 						pathName === '/' ? 'top-[0px]' : 'top-[0px]'
-					} cursor-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-red-400 top-0 flex justify-center items-center rounded-br-3xl `}>
-					<div className='relative flex justify-center items-center w-7 h-7 lg:w-10 lg:h-10 '>
+					} cursor-pointer fixed w-14 h-14 lg:w-16 lg:h-16 bg-orange top-0 flex justify-center items-center rounded-br-xl `}>
+					<div
+						className='relative flex justify-center items-center w-7 h-7 lg:w-10 lg:h-10 '
+						onClick={() => setIsOpen(false)}>
 						{isOpen ? (
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -77,12 +79,7 @@ const DiagonalDrawer = ({
 											className=''>
 											Home
 										</a>
-										{setSelectedIndexOne === 0 ? (
-											<div className='absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10'></div>
-										) : (
-											''
-										)}
-										<div className='absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10'></div>
+										<div className='absolute top-0  w-0 h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:opacity-100 group-hover:w-full bg-orange rounded-sm -z-10'></div>
 									</div>
 								</li>
 								{/* portfolio */}
@@ -97,12 +94,7 @@ const DiagonalDrawer = ({
 											className=''>
 											Portfolio
 										</a>
-										{setSelectedIndexOne === 1 ? (
-											<div className='absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10'></div>
-										) : (
-											''
-										)}
-										<div className='absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10'></div>
+										<div className='absolute top-0  w-0 h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:opacity-100 group-hover:w-full bg-orange rounded-sm -z-10'></div>
 									</div>
 								</li>
 								{/* hire */}
@@ -117,12 +109,7 @@ const DiagonalDrawer = ({
 											className=''>
 											Hire Me
 										</a>
-										{setSelectedIndexOne === 2 ? (
-											<div className='absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10'></div>
-										) : (
-											''
-										)}
-										<div className='absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10'></div>
+										<div className='absolute top-0  w-0 h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:opacity-100 group-hover:w-full bg-orange rounded-sm -z-10'></div>
 									</div>
 								</li>
 								{/* about */}
@@ -137,18 +124,14 @@ const DiagonalDrawer = ({
 											className=''>
 											About
 										</a>
-										{setSelectedIndexOne === 3 ? (
-											<div className='absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 -rotate-6  opacity-100  group-hover:rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10'></div>
-										) : (
-											''
-										)}
-										<div className='absolute top-2 -left-2 w-full h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:-rotate-6 group-hover:opacity-100 bg-[#48AFDE] rounded-xl -z-10'></div>
+
+										<div className='absolute top-0  w-0 h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:opacity-100 group-hover:w-full bg-orange rounded-sm -z-10'></div>
 									</div>
 								</li>
 							</ul>
 						</nav>
 						<section className='mt-14 sm:mt-12 lg:mt-14 text-center relative sm:absolute lg:relative sm:right-0 lg:right-0 h-auto sm:h-full lg:h-auto'>
-							<h3 className='block sm:hidden lg:block font-bold text-[#48AFDE]  text-2xl uppercase mb-5 '>
+							<h3 className='block sm:hidden lg:block font-bold text-orange  text-2xl uppercase mb-5 '>
 								Follow Me
 							</h3>
 							<div className='flex justify-center flex-row sm:flex-col  lg:flex-row'>
