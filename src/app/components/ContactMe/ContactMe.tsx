@@ -115,151 +115,16 @@ const ContactMe = () => {
 						</div>
 					</div>
 				</div>
-
-				<div className='px-[20px]'>
-					<div className='sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full'>
-						<div className='flex flex-col flex-1 xl:flex-row gap-[20px]'>
-							<div
-								className='flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[gray] hover:text-white hover:-translate-y-4 bg-white'
-								style={{ boxShadow: 'orange -1px 1px 10px 0px' }}>
-								<div className='flex items-center gap-[15px]'>
-									<div>
-										<FaLocationDot size={40} color='orange' />
-									</div>
-
-									<div className='flex flex-col'>
-										<div className='text-orange text-[14px]'>
-											<p>Location...</p>
-										</div>
-										<div className='font-semibold text-[20px] tracking-wide'>
-											<p>Visit Us At:</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<p className='text-[#666666]'>65th Street, Los Angeles</p>
-								</div>
-								<div>
-									<p className='text-[#666666]'>65th Street, Los Angeles</p>
-								</div>
-							</div>
-
-							<div
-								className='flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white'
-								style={{ boxShadow: '#48AFDE -1px 1px 10px 0px' }}>
-								<div className='flex items-center gap-[15px]'>
-									<div>
-										<FiPhoneCall size={40} color='#48AFDE' />
-									</div>
-
-									<div className='flex flex-col'>
-										<div className='text-[#48AFDE] text-[14px]'>
-											<p>24*7 Service..</p>
-										</div>
-										<div className='font-semibold text-[20px] tracking-wide'>
-											<p>Call Us On</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<p className='text-[#666666]'>Tel: +3258723591</p>
-								</div>
-								<div>
-									<p className='text-[#666666]'>Mob: +2372084620</p>
-								</div>
-							</div>
-						</div>
-
-						<div className='flex flex-col flex-1 xl:flex-row gap-[20px]'>
-							<div
-								className='flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white'
-								style={{ boxShadow: '#48AFDE -1px 1px 10px 0px' }}>
-								<div className='flex items-center gap-[15px]'>
-									<div>
-										<AiFillMail size={40} color='#48AFDE' />
-									</div>
-
-									<div className='flex flex-col'>
-										<div className='text-[#48AFDE] text-[14px]'>
-											<p>Drop A Line</p>
-										</div>
-										<div className='font-semibold text-[20px] tracking-wide'>
-											<p>Maill Address</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<p className='text-[#666666]'>ehizextech@gmail.com</p>
-								</div>
-								<div>
-									<p className='text-[#666666]'>edubaba@gmail.com</p>
-								</div>
-							</div>
-
-							<div
-								className='flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white'
-								style={{ boxShadow: '#48AFDE -1px 1px 10px 0px' }}>
-								<div className='flex items-center gap-[15px]'>
-									<div>
-										<AiOutlineFieldTime size={40} color='#48AFDE' />
-									</div>
-
-									<div className='flex flex-col'>
-										<div className='text-[#48AFDE] text-[14px]'>
-											<p>Office Hours..</p>
-										</div>
-										<div className='font-semibold text-[20px] tracking-wide'>
-											<p>Opening Time</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<p className='text-[#666666]'>Mon - Fri : 9am - 6pm</p>
-								</div>
-								<div>
-									<p className='text-[#666666]'>Sunday (Closed)</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 
 			<div
 				id='contact'
 				className='flex flex-col xl:flex-row justify-center gap-[60px] mt-[10px] px-[30px] max-w-[1105px] m-auto p-10 mb-[-100px]'>
-				<div
-					className='hidden md:block relative w-[50%] xl:w-[50%] h-[550px] rounded-md md:w-full lg:w-[50%] bg-center bg-cover'
-					// style={{ backgroundImage: `url('/customer-care.png')` }}
-				>
-					<div className='absolute h-full w-full bg-gradient-to-t from-[#223740] via-[#223740] shadow-inner opacity-70'></div>
-					<div className='absolute inset-0 flex flex-col gap-[20px] items-center justify-center text-white shadow-lg p-6'>
-						<div className='text-4xl xl:mt-[150px] mt-0 rounded-full px-[15px] py-[15px] bg-[#48AFDE] text-white'>
-							<FaHeadphones />
-						</div>
-						<div className='font-semibold text-[24px]'>Chat With Live!</div>
-						<div>
-							<p className='text-center mt-5 font-[200] text-xl'>
-								{' '}
-								Are you looking for a responsible, professinal full-stack
-								developer and designer for your website or your web application
-								projects? Just leave me a message and tell me how I can help.
-							</p>
-						</div>
-						<div>
-							<button className='bg-[#48AFDE] text-white mb-[30px] px-4 py-2 hover:bg-[#223740] transition-color rounded-xl'>
-								Let's chat
-							</button>
-						</div>
-					</div>
-				</div>
 				<div className='flex flex-col gap-[20px]'>
-					<div className='text-center w-[100px] bg-red-500 py-[1px] tracking-wide uppercase font-300 font-sans text-[14px] text-white rounded-md'>
-						Contact Me
-					</div>
-					<div className=''>
-						<p className='text-[30px] text-[#48AFDE]'>
-							Request A Call Back ! Feel Free To Reach & Contact Us.
+					<div className='mb-4'>
+						<p className='text-3xl'>
+							Have a question or want to work together? Send me a message using
+							the form.
 						</p>
 					</div>
 					<form className='flex flex-col gap-[20px]' onSubmit={handleSubmit}>
@@ -271,7 +136,7 @@ const ContactMe = () => {
 								required
 								onChange={handleChange}
 								value={state.name}
-								className='px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200'
+								className='px-[12px] border-2 border-gray rounded-md py-[12px] flex-1'
 							/>
 							<input
 								type='email'
@@ -280,7 +145,7 @@ const ContactMe = () => {
 								required
 								onChange={handleChange}
 								value={state.email}
-								className='px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200'
+								className='px-[12px] border-2 border-gray rounded-md py-[12px] flex-1'
 							/>
 						</div>
 						<div className='flex flex-col sm:flex-row gap-[20px]'>
@@ -291,7 +156,7 @@ const ContactMe = () => {
 								required
 								onChange={handlePhoneChange}
 								value={state.phoneNumber}
-								className='px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200'
+								className='px-[12px] border-2 border-gray rounded-md py-[12px] flex-1'
 							/>
 							<input
 								type='text'
@@ -300,7 +165,7 @@ const ContactMe = () => {
 								required
 								onChange={handleChange}
 								value={state.subject}
-								className='px-[12px] outline-none rounded-md py-[12px] flex-1 bg-gray-200'
+								className='px-[12px] border-2 border-gray rounded-md py-[12px] flex-1'
 							/>
 						</div>
 						<div>
@@ -310,18 +175,63 @@ const ContactMe = () => {
 								placeholder='Your Message...'
 								onChange={handleChange}
 								value={state.message}
-								className='px-[12px] outline-none h-[180px] w-full rounded-md py-[12px] flex-1 bg-gray-200'
+								className='w-full px-[12px] border-2 border-gray rounded-md py-[12px] flex-1'
 							/>
 						</div>
-						<div>
+						<div className='mx-auto'>
 							{loading && (
 								<div className='mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rounded-full'></div>
 							)}
-							<button className='bg-[#48AFDE] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-md text-white'>
-								Send Me Message
+							<button className='bg-orange w-full sm:w-auto px-[30px] py-[12px] hover:bg-gray transition-colors duration-300 font-semibold rounded-md text-white tracking-widest'>
+								Submit
 							</button>
 						</div>
 					</form>
+				</div>
+				<div className='px-[20px]'>
+					<div className='sm:flex flex-col gap-[20px] mt-[50px] w-full h-full'>
+						<div className='flex flex-col flex-1 xl:flex-row gap-[20px]'>
+							<div
+								className='flex justify-center flex-col py-[35px] px-[45px] rounded-md shadow-lg bg-blue'
+								style={{ boxShadow: 'hsl(var(--blue)) -1px 1px 10px 0px' }}>
+								<div className='flex flex-col items-center gap-[15px]'>
+									<div>
+										<FiPhoneCall size={50} color='hsl(var(--orange))' />
+									</div>
+
+									<div className='flex flex-col'>
+										<div className='font-semibold text-[20px] tracking-wide'>
+											<p className='text-white tracking-wider'>Call Me</p>
+										</div>
+									</div>
+									<div>
+										<p className='text-gray'>Mob: +48 512-374-866</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className='flex flex-col flex-1 xl:flex-row gap-[20px] mt-2'>
+							<div
+								className='flex justify-center  flex-col py-[35px] px-[45px] rounded-md shadow-lg bg-blue'
+								style={{ boxShadow: 'hsl(var(--blue)) -1px 1px 10px 0px' }}>
+								<div className='flex flex-col items-center gap-[15px]'>
+									<div>
+										<AiFillMail size={50} color='hsl(var(--orange))' />
+									</div>
+
+									<div className='flex flex-col'>
+										<div className='font-semibold text-[20px] tracking-wide'>
+											<p className='text-white tracking-wider'>Email</p>
+										</div>
+									</div>
+									<div>
+										<p className='text-gray'>gawlik.zator@gmail.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>
