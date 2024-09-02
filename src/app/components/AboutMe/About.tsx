@@ -50,7 +50,7 @@ const About = () => {
 						About Me
 					</h1>
 					<h1 className='relative text-5xl  text-orange mb-5 -mt-40  md:px-24 px-5'>
-						About My Self
+						About Me
 					</h1>
 					<h4 className='relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 text-white text-2xl mb-10 px-5 md:px-24'>
 						Aspiring front end developer
@@ -77,12 +77,7 @@ const About = () => {
 					</section>
 				</div>
 			</div>
-			<div
-				style={{
-					backgroundImage: 'linear-gradient(45deg, #EAF7FC  70%,#48AFDE 30%)',
-					width: '100%',
-				}}
-				className='lg:-mt-60'>
+			<div className='lg:-mt-60 bg-blue'>
 				<section className='container flex  flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px sm:mt-0] transform translate-y-[-100px]'>
 					<div className='hidden sm:flex w-full sm:w-1/2 lg:w-7/12'>
 						<div className='grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10'>
@@ -91,10 +86,12 @@ const About = () => {
 									<a
 										className={`relative cursor-pointer transition-all transform duration-300 group rounded-md center p-6 lg:p-10 flex flex-col justify-center  items-center ${
 											selectedIndex === index
-												? ' -translate-y-2 bg-[#476571]'
-												: 'hover:bg-[#476571] hover:shadow-xl hover:-translate-y-2 bg-white'
+												? ' -translate-y-2 bg-dark'
+												: 'hover:bg-dark hover:shadow-xl hover:-translate-y-2 bg-white'
 										}`}
-										style={{ boxShadow: '#48AFDE -5px  10px 20px 0px' }}
+										// style={{
+										// 	boxShadow: 'hsl(var(--orange)) 0px  5px 20px -5px',
+										// }}
 										onClick={() => handleCardClick(item, index)}
 										key={index}>
 										<div className='w-16 h-16 sm:w-10 sm:h-10  lg:w-16 lg:h-16'>
@@ -112,7 +109,7 @@ const About = () => {
 											{item.title}
 										</h4>
 										<div
-											className={`absolute -top-2 -right-2 transform transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl w-12 h-12 rounded-md bg-[#476571] flex justify-center items-center font-bold text-white text-xl  ${
+											className={`absolute -top-2 -right-2 transform transition-all duration-500 opacity-0 group-hover:opacity-100 shadow-xl w-12 h-12 rounded-md bg-orange flex justify-center items-center font-bold text-white text-xl  ${
 												selectedIndex === index
 													? 'opacity-100 rotate-12'
 													: 'group-hover:rotate-12'
@@ -130,7 +127,7 @@ const About = () => {
 								className={`fade-left overflow-hidden ${
 									isFaded ? 'fade-out' : ''
 								}`}>
-								<p className='text-[#47626D] text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100 undefined undefined mb-2'>
+								<p className='text-dark text-lg sm:text-base lg:text-xl transition duration-500 transform opacity-100 undefined undefined mb-2'>
 									My skills as:
 								</p>
 								<h2 className=' text-[#47626D] text-3xl sm:text-2xl md:text-3xl mb-6 w-44 md:w-56 transition duration-500 transform opacity-100 undefined undefined'>
@@ -149,7 +146,7 @@ const About = () => {
 									isFlipped ? 'flipped' : ''
 								}`}>
 								<div className='card-inner'>
-									<div className='rounded-md cursor-pointer  text-7xl  xl:text-9xl font-recoletaBlack text-white bg-[#47626D]  p-5 xl:p-8 w-28 h-28 xl:w-48 xl:h-48  transform transition duration-500 transform-preserve -rotate-6 transform-preserve'>
+									<div className='rounded-md cursor-pointer  text-5xl  xl:text-7xl text-white bg-orange  p-5 xl:p-8 w-28 h-28 xl:w-36 xl:h-36  transform transition duration-500 transform-preserve rotate-6 transform-preserve'>
 										<span className='text-2xl xl:text-6xl mr-2 sm:mr-3'>*</span>
 										{mapData.count}
 									</div>
@@ -158,7 +155,7 @@ const About = () => {
 							<div className='absolute right-10 -bottom-5 flex'>
 								<a
 									onClick={HandlePrevious}
-									className='w-12 h-12 rounded-md mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-[#47626D]'>
+									className='w-12 h-12 rounded-md mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-dark'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
 										fill='none'
@@ -175,7 +172,7 @@ const About = () => {
 								</a>
 								<a
 									onClick={HandleNext}
-									className='w-12 h-12 rounded-md mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-[#47626D]'>
+									className='w-12 h-12 rounded-md mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-dark'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
 										fill='none'

@@ -13,6 +13,7 @@ const config: Config = {
 				gray: 'hsl(var(--gray))',
 				blue: 'hsl(var(--blue))',
 				dark_green: 'hsl(var(--dark-green))',
+				dark: 'hsl(var(--dark))',
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
