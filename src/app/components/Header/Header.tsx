@@ -101,7 +101,7 @@ const Header = () => {
 								''
 							)}
 							<a
-								href='/page/contactme'
+								href='/#contactme'
 								onClick={() => setSelectedIndexOne(2)}
 								className={`menu-item ${
 									selectedIndexOne === 2

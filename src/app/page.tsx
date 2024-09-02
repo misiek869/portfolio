@@ -1,6 +1,7 @@
 'use client'
 import About from './components/AboutMe/About'
 import Cta from './components/CallToAction/Cta'
+import ContactMe from './components/ContactMe/ContactMe'
 import Home from './components/Home/Home'
 import MySlider from './components/SliderCard/MySlider'
 
@@ -39,6 +40,7 @@ export default function HomePage() {
 				</div>
 			</div>
 			<About />
+			<ContactMe />
 			<Cta />
 		</main>
 	)
