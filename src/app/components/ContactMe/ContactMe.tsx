@@ -94,7 +94,7 @@ const ContactMe = () => {
 			<div
 				className='flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4'
 				id='contactme'>
-				<div className='flex flex-col items-center justify-center bg-[url("/offices.jpg")] bg-cover bg-center w-full h-[400px]'>
+				<div className='flex flex-col items-center justify-center bg-[url("/contact.jpg")] bg-cover bg-center w-full h-[500px]'>
 					<div className='flex flex-col items-center justify-center  w-full h-full bg-[#223740]/70 backdrop-brightness-50'>
 						{/* <div className='text-center bg-[#48AFDE] py-[5px] px-[10px] tracking-wide uppercase font-semibold text-[20px] text-white rounded-lg'>
 							<a href='#contact' className='cursor-pointer'>
