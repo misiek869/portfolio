@@ -60,32 +60,33 @@ const Header = () => {
 					<ul className='flex flex-row align-items-center h-16 items-center'>
 						<li className={liStyles}>
 							{selectedIndexOne === 0 ? (
-								<span className='menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
+								<div className='absolute top-0  w-0 h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:opacity-100 group-hover:w-full bg-orange rounded-sm -z-10'></div>
 							) : (
-								<span className='menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
+								''
 							)}
+
 							<a
 								href='/#home'
 								onClick={() => setSelectedIndexOne(0)}
 								className={`menu-item ${
-									selectedIndexOne === 0 ? 'text-orange' : ''
-								} text-white group-hover:text-black`}>
+									selectedIndexOne === 0 ? 'text-orange font-bold' : ''
+								} text-white group-hover:text-white`}>
 								Home
 							</a>
 						</li>
 
 						<li className={liStyles}>
 							{selectedIndexOne === 1 ? (
-								<span className='menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
+								<div className='absolute top-0  w-0 h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:opacity-100 group-hover:w-full bg-orange rounded-sm -z-10'></div>
 							) : (
-								<span className='menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
+								''
 							)}
 							<a
 								href='/#home'
 								onClick={() => setSelectedIndexOne(1)}
 								className={`menu-item ${
-									selectedIndexOne === 1 ? 'text-orange' : ''
-								} text-white group-hover:text-black`}>
+									selectedIndexOne === 0 ? 'text-orange font-bold' : ''
+								} text-white group-hover:text-white`}>
 								Portfolio
 							</a>
 						</li>

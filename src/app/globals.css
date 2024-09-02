@@ -20,12 +20,12 @@ body {
 
 .menu-effect {
 	left: -0.75rem;
-	top: 0.125rem;
+	top: 0;
 	z-index: -10;
 	height: 2rem;
-	width: 2rem;
-	border-radius: 0.5rem;
-	background-color: #48afde;
+	width: 6rem;
+	border-radius: 0.25rem;
+	background-color: #000000;
 	transition-duration: 0.5s;
 	position: absolute;
 }
