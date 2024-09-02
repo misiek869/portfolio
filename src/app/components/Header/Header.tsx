@@ -60,65 +60,65 @@ const Header = () => {
 					<ul className='flex flex-row align-items-center h-16 items-center'>
 						<li className={liStyles}>
 							{selectedIndexOne === 0 ? (
-								<div className='absolute top-0  w-0 h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:opacity-100 group-hover:w-full bg-orange rounded-sm -z-10'></div>
+								<div className='absolute top-0 -left-5  w-1/4 h-full  group-hover:opacity-100  bg-orange rounded-sm -z-10'></div>
 							) : (
 								''
 							)}
-
 							<a
 								href='/#home'
 								onClick={() => setSelectedIndexOne(0)}
 								className={`menu-item ${
-									selectedIndexOne === 0 ? 'text-orange font-bold' : ''
-								} text-white group-hover:text-white`}>
+									selectedIndexOne === 0
+										? 'text-white font-bold'
+										: 'group-hover:text-orange font bold text-white'
+								}  `}>
 								Home
 							</a>
 						</li>
 
 						<li className={liStyles}>
 							{selectedIndexOne === 1 ? (
-								<div className='absolute top-0  w-0 h-full transform-gpu transition-all duration-300 rotate-0  opacity-0  group-hover:opacity-100 group-hover:w-full bg-orange rounded-sm -z-10'></div>
+								<div className='absolute top-0 -left-5  w-1/4 h-full  group-hover:opacity-100  bg-orange rounded-sm -z-10'></div>
 							) : (
 								''
 							)}
 							<a
-								href='/#home'
+								href='/#portfolio'
 								onClick={() => setSelectedIndexOne(1)}
 								className={`menu-item ${
-									selectedIndexOne === 0 ? 'text-orange font-bold' : ''
-								} text-white group-hover:text-white`}>
+									selectedIndexOne === 1
+										? 'text-white font-bold'
+										: 'hover:text-orange hover:font bold text-white'
+								}  `}>
 								Portfolio
 							</a>
 						</li>
 
 						<li className={liStyles}>
 							{selectedIndexOne === 2 ? (
-								<span className='menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
+								<div className='absolute top-0 -left-5  w-1/4 h-full  group-hover:opacity-100  bg-orange rounded-sm -z-10'></div>
 							) : (
-								<span className='menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
+								''
 							)}
 							<a
 								href='/page/contactme'
 								onClick={() => setSelectedIndexOne(2)}
 								className={`menu-item ${
-									selectedIndexOne === 2 ? 'text-orange' : ''
-								} text-white group-hover:text-black`}>
+									selectedIndexOne === 2
+										? 'text-white font-bold'
+										: 'hover:text-orange hover:font bold text-white'
+								}  `}>
 								Contact Me
 							</a>
 						</li>
 
 						<li className={liStyles}>
-							{selectedIndexOne === 3 ? (
-								<span className='menu-effect transform opacity-100 -rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
-							) : (
-								<span className='menu-effect transform opacity-0 rotate-12 group-hover:-rotate-12 group-hover:opacity-100'></span>
-							)}
 							<a
 								href='/#about'
 								onClick={() => setSelectedIndexOne(3)}
 								className={`menu-item ${
-									selectedIndexOne === 3 ? 'text-orange' : ''
-								} text-white group-hover:text-black`}>
+									selectedIndexOne === 1 ? 'text-orange font-bold' : ''
+								} text-white group-hover:text-orange`}>
 								About
 							</a>
 						</li>

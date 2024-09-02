@@ -77,7 +77,8 @@ html {
 
 @media (min-width: 1280px) {
 	.headerShow {
-		background-color: #fff;
-		box-shadow: #48afde -10px 25px 50px 10px;
+		background-color: #197278;
+		opacity: 0.7;
+		/* box-shadow: #48afde -10px 25px 50px 10px; */
 	}
 }
