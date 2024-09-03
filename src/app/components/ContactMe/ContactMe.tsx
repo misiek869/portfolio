@@ -108,9 +108,8 @@ const ContactMe = () => {
 						</div>
 						<div className='flex justify-center text-center mt-[10px] md:w-[700px] '>
 							<p className='text-white font-[300] text-cener text-xl'>
-								Are you looking for a responsible, professinal full-stack
-								developer and designer for your website or your web application
-								projects? Just leave me a message and tell me how I can help.
+								If You are you looking for a responsible, professional front-end
+								developer? Just leave me a message.
 							</p>
 						</div>
 					</div>
