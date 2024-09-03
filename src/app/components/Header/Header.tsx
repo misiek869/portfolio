@@ -40,8 +40,8 @@ const Header = () => {
 			<header
 				className={`${
 					isScrolled ? 'headerShow' : ''
-				} w-full fixed top-0 z-50 transition-all duration-500 bg-blue`}>
-				<div className='relative'>
+				} w-full fixed top-0 z-50 transition-all duration-500 xl:bg-blue bg-transparent`}>
+				<div className='xl:hidden relative'>
 					<div
 						className='z-30 absolute cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-orange flex justify-center items-center rounded-br-xl'
 						onClick={openDrawer}>
