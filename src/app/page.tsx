@@ -4,7 +4,6 @@ import Cta from './components/CallToAction/Cta'
 import ContactMe from './components/ContactMe/ContactMe'
 import Home from './components/Home/Home'
 import Portfolio from './components/Portfolio/Portfolio'
-import MySlider from './components/SliderCard/MySlider'
 
 export default function HomePage() {
 	return (
