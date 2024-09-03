@@ -56,19 +56,19 @@ const About = () => {
 						Aspiring front end developer
 					</h4>
 					<section className='relative flex flex-col lg:flex-row px-5 md:px-24'>
-						<p className='w-full lg:w-1/3 text-white mr-0 mb-5  lg:mr-4 font-[200]'>
+						<p className='w-full lg:w-1/3 text-white mr-0 mb-5 font-light lg:mr-4 text-sm md:text-lg'>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
 							quae sint quasi fuga, impedit eligendi mollitia iste ratione
 							labore numquam eius veniam debitis unde soluta illum in. Neque,
 							qui commodi.
 						</p>
-						<p className='w-full lg:w-1/3 text-white mr-0 mb-5  lg:mr-4 font-[200]'>
+						<p className='w-full lg:w-1/3 text-white mr-0 mb-5 font-light lg:mr-4 text-sm md:text-lg'>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
 							quae sint quasi fuga, impedit eligendi mollitia iste ratione
 							labore numquam eius veniam debitis unde soluta illum in. Neque,
 							qui commodi.
 						</p>
-						<p className='w-full lg:w-1/3 text-white mr-0 mb-5  lg:mr-4 font-[200]'>
+						<p className='w-full lg:w-1/3 text-white mr-0 mb-5 font-light lg:mr-4 text-sm md:text-lg'>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
 							quae sint quasi fuga, impedit eligendi mollitia iste ratione
 							labore numquam eius veniam debitis unde soluta illum in. Neque,

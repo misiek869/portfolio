@@ -14,7 +14,7 @@ const Portfolio = () => {
 					<p className='text-orange capitalize  md:pl-[80px] px-5 font-extrabold text-5xl'>
 						recent work
 					</p>
-					<p className='max-w-2xl md:pl-[80px] px-5 font-[300] text-[16px] text-[#47626D] leading-8 mt-5'>
+					<p className='max-w-2xl md:pl-[80px] px-5 text-sm md:text-lg font-light text-dark leading-8 mt-5'>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 						Distinctio, assumenda laboriosam in ab ipsam at natus illum dolorum
 						tempora dolor sit quo, laudantium, iure doloribus soluta placeat?
