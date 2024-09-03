@@ -40,7 +40,7 @@ const Header = () => {
 			<header
 				className={`${
 					isScrolled ? 'headerShow' : ''
-				} w-full fixed top-0 z-50 transition-all duration-500`}>
+				} w-full fixed top-0 z-50 transition-all duration-500 bg-blue`}>
 				<div className='relative'>
 					<div
 						className='z-30 absolute cursor-pointer w-14 h-14 lg:w-16 lg:h-16 bg-orange flex justify-center items-center rounded-br-xl'
@@ -95,6 +95,17 @@ const Header = () => {
 						</li>
 
 						<li className={liStyles}>
+							<a
+								href='/#about'
+								onClick={() => setSelectedIndexOne(3)}
+								className={`menu-item ${
+									selectedIndexOne === 1 ? 'text-orange font-bold' : ''
+								} text-white group-hover:text-orange`}>
+								About
+							</a>
+						</li>
+
+						<li className={liStyles}>
 							{selectedIndexOne === 2 ? (
 								<div className='absolute top-0 -left-5  w-1/4 h-full  group-hover:opacity-100  bg-orange rounded-sm -z-10'></div>
 							) : (
@@ -109,17 +120,6 @@ const Header = () => {
 										: 'hover:text-orange hover:font bold text-white'
 								}  `}>
 								Contact Me
-							</a>
-						</li>
-
-						<li className={liStyles}>
-							<a
-								href='/#about'
-								onClick={() => setSelectedIndexOne(3)}
-								className={`menu-item ${
-									selectedIndexOne === 1 ? 'text-orange font-bold' : ''
-								} text-white group-hover:text-orange`}>
-								About
 							</a>
 						</li>
 					</ul>

@@ -6,8 +6,7 @@ const Portfolio = () => {
 			<div className='container m-auto'>
 				<p
 					className='text-[240px] text-opacity-5 text-black text-center mt-1 w-full overflow-hidden'
-					// style={{ transform: 'translate(0px,-20px)' }}
-				>
+					style={{ transform: 'translate(0px, 120px)' }}>
 					portfolio
 				</p>
 				<div className='' style={{ transform: 'translate(0px, -250px)' }}>

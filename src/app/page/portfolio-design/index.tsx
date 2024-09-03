@@ -35,13 +35,13 @@ const Index = ({ data, id, dataArray }: PortfolioDesignProps) => {
 
 	return (
 		<>
-			<div className='overlay h-[400px] lg:top-[96px] sm:top-0 z-20 border-t border-gray-300'></div>
+			<div className='overlay h-[400px] z-20 border-t border-orange'></div>
 
 			<div className='relative'>
 				<Image
 					src={data?.images[0]}
 					alt='bg photo'
-					className='h-[400px]  lg:mt-24 sm:mt-0  object-fill'
+					className='h-[400px]  object-fill'
 					width={0}
 					height={20}
 					sizes='100vw'
